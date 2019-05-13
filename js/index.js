@@ -40,3 +40,68 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const navItem1 = document.createElement('a');
+const navItem2 = document.createElement('a');
+const navItem3 = document.createElement('a');
+const navItem4 = document.createElement('a');
+const navItem5 = document.createElement('a');
+const navItem6 = document.createElement('a');
+
+  navItem1.textContent = 'Services'
+  navItem2.textContent = 'Product'
+  navItem3.textContent = 'Vision'
+  navItem4.textContent = 'Features'
+  navItem5.textContent = 'About'
+  navItem6.textContent = 'Contact'
+
+  const navContent1 = document.querySelector('nav');
+  navContent1.append(navItem1);
+
+  const navContent2 = document.querySelector('nav');
+  navContent2.append(navItem2);
+
+  const navContent3 = document.querySelector('nav');
+  navContent3.append(navItem3);
+
+  const navContent4 = document.querySelector('nav');
+  navContent4.append(navItem4);
+
+  const navContent5 = document.querySelector('nav');
+  navContent5.append(navItem5);
+
+  const navContent6 = document.querySelector('nav');
+  navContent6.append(navItem6);
+
+const titleText = document.querySelector('h1');
+
+  titleText.textContent = 'Dom is Awesome!';
+
+  titleText.classList.add('.cta');
+
+
+const roundImg = document.getElementById('cta-img');
+
+  roundImg.src = 'img/header-img.png';
+
+const getStartedBtn = document.querySelector('button');
+
+  getStartedBtn.textContent = 'Get Started';
+
+  getStartedBtn.classList.add('.cta-text');
+
+const h4Test = document.getElementsByTagName('h4');
+
+const newh4Test = Array.from(h4Test);
+
+newh4Test[0].textContent = 'Features';
+newh4Test[1].textContent = 'About';
+
+
+// const newFeatures = document.querySelector('h4');
+
+//   newFeatures.textContent = 'Features'
+
+//   newFeatures.classList.add('.text-content');
+
+
