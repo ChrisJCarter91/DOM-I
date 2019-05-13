@@ -94,14 +94,36 @@ const h4Test = document.getElementsByTagName('h4');
 
 const newh4Test = Array.from(h4Test);
 
-newh4Test[0].textContent = 'Features';
-newh4Test[1].textContent = 'About';
+  newh4Test[0].textContent = 'Features';
+  newh4Test[1].textContent = 'About';
+  newh4Test[2].textContent = 'Services';
+  newh4Test[3].textContent = 'Product';
+  newh4Test[4].textContent = 'Vision';
+  newh4Test[5].textContent = 'Contact';
 
+const midImg = document.getElementById('middle-img');
 
-// const newFeatures = document.querySelector('h4');
+  midImg.src = 'img/mid-page-accent.jpg';
 
-//   newFeatures.textContent = 'Features'
+const txtContent = document.getElementsByTagName('p');
 
-//   newFeatures.classList.add('.text-content');
+const newtxtContent = Array.from(txtContent);
 
+newtxtContent[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+newtxtContent[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+newtxtContent[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+newtxtContent[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+newtxtContent[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+newtxtContent[5].textContent = '123 Way 456 Street Somewhere, USA';
+
+newtxtContent[6].textContent = '1 (888) 888-8888';
+
+newtxtContent[7].textContent = 'sales@greatidea.io';
+
+newtxtContent[8].textContent = 'Copyright Great Idea! 2018';
 
