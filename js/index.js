@@ -41,54 +41,81 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const navItem1 = document.createElement('a');
-const navItem2 = document.createElement('a');
-const navItem3 = document.createElement('a');
-const navItem4 = document.createElement('a');
-const navItem5 = document.createElement('a');
-const navItem6 = document.createElement('a');
+const newNav = document.getElementsByTagName('a');
 
-  navItem1.textContent = 'Services'
-  navItem2.textContent = 'Product'
-  navItem3.textContent = 'Vision'
-  navItem4.textContent = 'Features'
-  navItem5.textContent = 'About'
-  navItem6.textContent = 'Contact'
+const newNavTest = Array.from(newNav);
 
-  const navContent1 = document.querySelector('nav');
-  navContent1.append(navItem1);
+newNavTest[0].textContent = 'Services';
+newNavTest[1].textContent = 'Product';
+newNavTest[2].textContent = 'Vision';
+newNavTest[3].textContent = 'Features';
+newNavTest[4].textContent = 'About';
+newNavTest[5].textContent = 'Contact';
 
-  const navContent2 = document.querySelector('nav');
-  navContent2.append(navItem2);
+newNavTest.forEach( function( currentValue) {
+  currentValue.style.color = 'green';
+});
 
-  const navContent3 = document.querySelector('nav');
-  navContent3.append(navItem3);
+const newNavItm1 = document.createElement('a');
+const newNavItm2 = document.createElement('a');
 
-  const navContent4 = document.querySelector('nav');
-  navContent4.append(navItem4);
+const newerNavTest = document.querySelector('nav');
 
-  const navContent5 = document.querySelector('nav');
-  navContent5.append(navItem5);
+newNavItm1.textContent = 'Custom';
+newNavItm2.textContent = 'FAQ';
 
-  const navContent6 = document.querySelector('nav');
-  navContent6.append(navItem6);
+newerNavTest.appendChild(newNavItm1);
+newerNavTest.appendChild(newNavItm2);
+
+
+// const navItem1 = document.createElement('a');
+// const navItem2 = document.createElement('a');
+// const navItem3 = document.createElement('a');
+// const navItem4 = document.createElement('a');
+// const navItem5 = document.createElement('a');
+// const navItem6 = document.createElement('a');
+
+//   navItem1.textContent = 'Services'
+//   navItem2.textContent = 'Product'
+//   navItem3.textContent = 'Vision'
+//   navItem4.textContent = 'Features'
+//   navItem5.textContent = 'About'
+//   navItem6.textContent = 'Contact'
+
+//   const navContent1 = document.querySelector('nav');
+//   navContent1.append(navItem1);
+
+//   const navContent2 = document.querySelector('nav');
+//   navContent2.append(navItem2);
+
+//   const navContent3 = document.querySelector('nav');
+//   navContent3.append(navItem3);
+
+//   const navContent4 = document.querySelector('nav');
+//   navContent4.append(navItem4);
+
+//   const navContent5 = document.querySelector('nav');
+//   navContent5.append(navItem5);
+
+//   const navContent6 = document.querySelector('nav');
+//   navContent6.append(navItem6);
 
 const titleText = document.querySelector('h1');
 
   titleText.textContent = 'Dom is Awesome!';
-
-  titleText.classList.add('.cta');
 
 
 const roundImg = document.getElementById('cta-img');
 
   roundImg.src = 'img/header-img.png';
 
+
 const getStartedBtn = document.querySelector('button');
 
   getStartedBtn.textContent = 'Get Started';
 
   getStartedBtn.classList.add('.cta-text');
+
 
 const h4Test = document.getElementsByTagName('h4');
 
@@ -101,29 +128,31 @@ const newh4Test = Array.from(h4Test);
   newh4Test[4].textContent = 'Vision';
   newh4Test[5].textContent = 'Contact';
 
+
 const midImg = document.getElementById('middle-img');
 
   midImg.src = 'img/mid-page-accent.jpg';
+
 
 const txtContent = document.getElementsByTagName('p');
 
 const newtxtContent = Array.from(txtContent);
 
-newtxtContent[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+  newtxtContent[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
-newtxtContent[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+  newtxtContent[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
-newtxtContent[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+  newtxtContent[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
-newtxtContent[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+  newtxtContent[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
-newtxtContent[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+  newtxtContent[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
-newtxtContent[5].textContent = '123 Way 456 Street Somewhere, USA';
+  newtxtContent[5].textContent = '123 Way 456 Street Somewhere, USA';
 
-newtxtContent[6].textContent = '1 (888) 888-8888';
+  newtxtContent[6].textContent = '1 (888) 888-8888';
 
-newtxtContent[7].textContent = 'sales@greatidea.io';
+  newtxtContent[7].textContent = 'sales@greatidea.io';
 
-newtxtContent[8].textContent = 'Copyright Great Idea! 2018';
+  newtxtContent[8].textContent = 'Copyright Great Idea! 2018';
 
