@@ -1,5 +1,7 @@
 # Stretch Assignment - Digital Timer
 
+Chris Carter
+
 Topics:
  * Interacting with the DOM
  * Selectors
